@@ -29,4 +29,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - run: git config --global user.email "brayanbernal0710@gmail.com"
+    - run: git config --global user.name "Brayan Bernal"
+    - run: git config --global user.username "brayanibp"
+    - run: git clone https://brayanibp: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@github.com/brayanibp/livecar.git --branch=gh-pages
+    - run: git remote set-url origin https://brayanibp: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@github.com/brayanibp/livecar.git
     - run: npm run deploy
