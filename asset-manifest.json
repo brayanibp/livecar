@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/livecar/static/css/main.073c9b0a.css",
+    "main.js": "/livecar/static/js/main.e31572f1.js",
+    "static/js/787.73d6d1aa.chunk.js": "/livecar/static/js/787.73d6d1aa.chunk.js",
+    "static/media/logo.svg": "/livecar/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/livecar/index.html",
+    "main.073c9b0a.css.map": "/livecar/static/css/main.073c9b0a.css.map",
+    "main.e31572f1.js.map": "/livecar/static/js/main.e31572f1.js.map",
+    "787.73d6d1aa.chunk.js.map": "/livecar/static/js/787.73d6d1aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.e31572f1.js"
+  ]
+}
