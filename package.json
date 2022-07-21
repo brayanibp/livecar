@@ -1,0 +1,15 @@
+{
+  "name": "livecar",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://brayanibp.github.io/livecar",
+  "scripts": {
+    "deploy": "gh-pages -d ./"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
