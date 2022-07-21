@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>Sistema de Administracion de Taxis</title>
+</head>
+
+<body>
+
+
+    <div class="carts-container">
+        <header class="header">
+            <a href="index.html" id="logo"><img src="images/livecar.png" alt=""></a>
+            <nav class="navbar">
+                <a href="index.html">Inicio</a>
+                <a href="carros.html">Carros</a>
+                <a href="pagos.html">Pagos</a>
+                <a href="clientes.html">Clientes</a>
+                <a href="taxistas.html">Taxistas</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="reportes.html">Reportes</a>
+                <a href="mantenimiento.html">Mantenimiento</a>
+                <a href="ayuda.html">Ayuda</a>
+
+
+            </nav>
+            <a href="#" id="menu-bars" class="fas fa-bars"></a>
+        </header>
+    </div>
+
+
+    <div class="home-container">
+        <div class="home-content">
+            
+          
+       
+           
+
+
+            <!-- FORMULARIO PARA CONSULTAR CARROS-->
+            <h2 class="tit_cons"> CONSULTAR / ELIMINAR </h2>
+            <form id="form-con-el-car">
+                <section class="form_clientes">
+        
+                    <h4 class="titulo_form"> CONSULTAR / ELIMINAR CARRO</h4>
+                    <div class="mar_mod"> <img class="img_mar_mod" src="images/auto.png" alt="">
+                        <input class="controls_usuario" type="text" name="id_carro" id="id-carro"
+                            placeholder="Ingrese el ID del carro">
+    
+                        <input class="controls_apellido" type="text" name="marca_carro" id="marca_carro"
+                            placeholder="Ingrese la marca del carro">
+                    </div>
+                    <p></p>
+                    <div class="clase" align="left"><button id="consultar_carro" input="submit" value="AGREGAR" class="botons">
+                          <h2 class="prb"> CONSULTAR </h2>
+                        </button> <button id="" input="submit" value="AGREGAR" class="botons">
+                            <h2 class="prb"> ELIMINAR </h2>
+                          </button></div>
+    
+                </section>
+                <br><br>      <br><br>      <br><br>       
+            </form>
+      
+        </div>
+    </div>
+  
+
+<!-- Modificar cliente-->
+<br>
+    <h2 class="tit_cons"> MODIFICAR </h2>
+    <form id="form-mod-car">
+        <section class="form_clientes">
+    
+            <h4 class="titulo_form"> MODIFICAR CARRO</h4> 
+
+            
+            <div class="cedula"> <img class="img_cedula" src="images/cedula.png" alt=""><input class="controls"
+                type="text" name="text" id="cedula"
+                placeholder="Ingrese el ID del CARRO que deseas modificar"></div>
+
+    
+            <div class="ano"> <img class="img_ano" src="images/ano.png" alt=""> <input
+                class="controls" type="text" name="ano" id="ano"
+                placeholder="Ingrese año del vehiculo">
+        </div>
+        <div class="capacidad"> <img class="img_capacidad" src="images/capacidad.png" alt=""> <input
+                class="controls" type="text" name="text" id="capacidad"
+                placeholder="Ingrese capacidad del vehiculo">
+        </div>
+
+        <div class="mar_mod"> <img class="img_mar_mod" src="images/auto.png" alt="">
+            <input class="controls_usuario" type="text" name="marca" id="marca"
+                placeholder="Ingrese marca del vehiculo">
+            <input class="controls_apellido" type="text" name="modelo" id="modelo"
+                placeholder="Ingrese modelo del vehiculo">
+        </div>
+
+        <div class="matricula"> <img class="img_matricula" src="images/matricula.png" alt=""> <input
+                class="controls" type="text" name="matricula" id="matricula"
+                placeholder="Ingrese matricula del vehiculo">
+        </div>
+
+        <div class="clase"><button input="submit" value="AGREGAR" class="botons">
+                <h2 class="prb"> MODIFICAR </h2>
+            </button></div>
+      
+
+        
+          
+    
+        </section>
+
+        <br>      <br><br>      <br><br>      <br><br>    
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <div id="footer">Copyright 2022. Todos los derechos reservados <br>
+        Maracaibo, EDO Zulia, Venezuela <br></div>
+</body>
+
+</html>
