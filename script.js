@@ -316,3 +316,11 @@ if ($form_subir_respaldo) {
         })
     })
 }
+
+
+//LOGIN 
+
+ // SE ENCUENTRA EN LA ETIQUETA SCRIPT DENTRO DE LOGIN.HTML
+
+
+ 

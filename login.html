@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="styleslogin.css">
+</head>
+
+
+<body>
+    <form id="form-login" class="login">
+        <h2>LIVECAR - INICIO DE SESION</h2>
+        <input type="text" placeholder="&#128272; Correo" name="correo">
+        <input type="password" placeholder="&#128272; Contraseña" name="contraseña">
+
+            <input  type="submit"  value="Ingresar" name="boton_enviar" id="">
+            <br>
+            <a href="index.html" class="olvidar_contra">Olvidaste la contraseña?</a>
+        
+    </form>
+
+<!-- FORMDATA DE EL LOGIN-->
+<script> 
+const $form_login = document.querySelector('#form-login')
+ if($form_login) { 
+     $form_login.addEventListener('submit', (event)=> { 
+         event.preventDefault()
+         const formDataLogin = new FormData(event.currentTarget)
+          fetch('/', {
+            method: 'POST',
+            body: formDataLogin,
+        })
+     })
+ }
+ </script>
+</body>
+</html>
