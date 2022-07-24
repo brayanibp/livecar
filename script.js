@@ -1,8 +1,8 @@
 const ACCESS = localStorage.getItem('access') || false;
 
-if (!ACCESS && !window.location.pathname.includes('login')) {
+if (!ACCESS) {
     localStorage.setItem('access',false);
-    window.location.replace("login.html");
+    window.location.replace("/login");
 }
 
 let menubar = document.querySelector('#menu-bars');
