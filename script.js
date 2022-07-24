@@ -1,6 +1,7 @@
 const ACCESS = localStorage.getItem('access') || false;
 
 if (!ACCESS) {
+    localStorage.setItem('access',false);
     window.location.replace("livecar/login.html");
 }
 
