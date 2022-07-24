@@ -1,4 +1,4 @@
-const ACCESS = localStorage.getItem('access') || false;
+const ACCESS = !!localStorage.getItem('access') || false;
 
 if (!ACCESS) {
     localStorage.setItem('access',false);
