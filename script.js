@@ -1,4 +1,4 @@
-const ACCESS = !!localStorage.getItem('access') || false;
+const ACCESS = Boolean(localStorage.getItem('access')) || false;
 
 console.log(ACCESS);
 
