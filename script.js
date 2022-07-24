@@ -1,4 +1,10 @@
-let menubar = document.querySelector('#menu-bars')
+const ACCESS = localStorage.getItem('access') || false;
+
+if (!ACCESS) {
+    window.location.replace("livecar/login.html");
+}
+
+let menubar = document.querySelector('#menu-bars');
 let mynav = document.querySelector('.navbar');
 
 menubar.onclick = () => {
