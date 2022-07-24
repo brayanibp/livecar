@@ -1,8 +1,8 @@
 const ACCESS = localStorage.getItem('access') || false;
 
-if (!ACCESS) {
+if (!ACCESS && !window.location.pathname.includes('login')) {
     localStorage.setItem('access',false);
-    window.location.replace("livecar/login.html");
+    window.location.replace("login.html");
 }
 
 let menubar = document.querySelector('#menu-bars');
