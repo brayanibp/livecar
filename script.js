@@ -1,6 +1,7 @@
 const ACCESS = !!localStorage.getItem('access') || false;
 
 if (!ACCESS) {
+    console.log("Está pasando por la autenticación");
     localStorage.setItem('access',false);
     window.location.replace("/login");
 }
