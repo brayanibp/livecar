@@ -23,23 +23,6 @@
     </form>
 
 <!-- FORMDATA DE EL LOGIN-->
-<script> 
-  const $form_login = document.querySelector('#form-login')
-  const sendData = async (data) => {
-    const res = await fetch('https://livecarapi.herokuapp.com/login', {
-      method: 'POST',
-      body: data,
-      mode:"cors"
-    });
-    return res.json();
-  }
-  if($form_login) { 
-    $form_login.addEventListener('submit',async (event)=> { 
-      event.preventDefault();
-      const formDataLogin = new FormData(event.currentTarget);
-      console.log(sendData(formDataLogin));
-    })
-  }
-</script>
+<script src="js/login.js"></script>
 </body>
 </html>
