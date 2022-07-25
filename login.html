@@ -11,16 +11,14 @@
 
 
 <body>
-    <form id="form-login" class="login">
-        <h2>LIVECAR - INICIO DE SESI&Oacute;N</h2>
-        <input type="email" placeholder="&#128272; Correo" name="correo">
-        <input type="password" placeholder="&#128272; Contraseña" name="contraseña" minlength="6" maxlength="12">
-
-            <input  type="submit"  value="Ingresar" name="boton_enviar" id="">
-            <br>
-            <a href="index.html" class="olvidar_contra">¿Olvidaste la contraseña?</a>
-        
-    </form>
+  <form id="form-login" class="login" onsubmit="(e)=>sendData(e);">
+    <h2>LIVECAR - INICIO DE SESI&Oacute;N</h2>
+    <input type="email" placeholder="&#128272; Correo" name="correo">
+    <input type="password" placeholder="&#128272; Contraseña" name="contraseña" minlength="6" maxlength="12">
+    <input  type="submit"  value="Ingresar" name="boton_enviar" id="login_button">
+    <br>
+    <a href="index.html" class="olvidar_contra">¿Olvidaste la contraseña?</a>   
+  </form>
 
 <!-- FORMDATA DE EL LOGIN-->
 <script src="js/login.js"></script>
