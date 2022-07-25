@@ -1,3 +1,4 @@
+const axios = require('axios');
 const $form_login = document.querySelector('#form-login');
 
 const sendData = async (event) => {
@@ -8,11 +9,7 @@ const sendData = async (event) => {
   for (let entry of formDataLogin.entries()) {
     body[entry[0]] = entry[1];
   }
-  const res = await fetch('https://livecarapi.herokuapp.com/login', {
-    headers: { 
-      "Content-Type": "application/json",
-      "Accept": "application/json,text/*;q=0.99"
-    },
+  const res = await axios('https://livecarapi.herokuapp.com/login', {
     method: 'POST',
     body: formDataLogin
   });
