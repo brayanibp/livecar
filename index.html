@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
-   <title>Sistema de Administracion de Taxis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Sistema de Administracion de Taxis</title>
 </head>
+
 <body>
 
-    
+
     <div class="main-container">
         <div class="background-text">
             <h2 align="center">Administracion de <span> TAXIS </span></h2>
-         
+
         </div>
-        
+
         <header class="header">
             <a href="index.html" id="logo"><img src="images/livecar.png" alt=""></a>
             <nav class="navbar">
@@ -29,7 +32,7 @@
                 <a href="reportes.html">Reportes</a>
                 <a href="mantenimiento.html">Mantenimiento</a>
                 <a href="ayuda.html">Ayuda</a>
-          
+
 
             </nav>
             <a href="#" id="menu-bars" class="fas fa-bars"></a>
@@ -43,152 +46,101 @@
     <div class="home-container">
         <div class="home-content">
             <div class="inner-content">
-                <h2 align="center">CALCULADORA DE SERVICIOS</h2>
+                <h2 align="center">LIVECAR - SISTEMA DE ADMINISTRACION DE TAXIS</h2>
 
-                <p> Utiliza esta calculadora para saber los precios de cada servicio, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde impedit in asperiores dolorum est? Odio, amet! Nemo iusto at aspernatur laudantium earum harum neque qui aperiam maxime itaque, praesentium in.</p>
-    
+                <p> <b>Live Car </b> es un sistema de administración de taxis el cual está dirigido hacia los encargados de una
+                    empresa de transporte de taxis, por ende este software va a ser manejado por el personal autorizado
+                    el cual dicte la empresa, que en este caso sería el administrador del sistema. El propósito de Live
+                    Car es que los que usen el software puedan administrar de la mejor manera su empresa de transporte,
+                    esto lo podemos corroborar a través de las secciones que tiene el mismo que son: carros, taxistas,
+                    reportes, mantenimiento, clientes, pagos, servicios y ayuda</p>
+
             </div>
 
-    <!-- cuadro calculadora-->
-            <div class="inner-content">
-            <div class="contact-form">
-                <div class="form-heading">
-                    <h1>CALCULADORA</h1>
-                </div>
-                <div class="form-fields">
-                    <input type="text" placeholder="Inicio">
-                    <input type="text" placeholder="Final">
-                    <input type="text" placeholder="KM reccoridos">
-                    
+            <!-- cuadro calculadora-->
+            <div class="inner-cont3e2nt">
+                <div class="contact-form">
+                    <div class="submit">
+                        <a>CALCULADORA</a>
+                    </div>
+                    <form name="calc">
+                        <input class="kmreco" type="Text" name="operando1" placeholder="Kilometros recorridos" size="12">
+                        <br>
+                        <input class="calcular" type="Button" name="" value="CALCULAR" onclick="calcula('*')">
+                       
+                        <br>
+                        <input class="result" type="Text" name="resultado" value="0" size="12">
+                        </form>
 
-                
+
+
                 </div>
-                <div class="submit">
-                    <a href="#">CALCULAR</a>
-                </div>
-                
-            </div>
-            
+
             </div>
         </div>
     </div>
 
 
-    <!-- Taxistas Reconocidos-->
+    <!-- EQUIPO DE TRABAJO-->
     <div class="main-tariff">
-        <h1> TAXISTAS<span> RECONOCIDOS</span>  </h1>
+        <h1> EQUIPO DE<span>  TRABAJO</span> </h1>
         <div class="inner-tarrif">
+            
+           
             <div class="tarrif-container">
-                <div class="inner-box">
-                    <img src="images/image1.png" alt="">
-                    <h2>TAXISTA #1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
-                
-                    <a href="#">VER TAXISTA</a>
+                <div class="inner-box"> <br><br>
+                    <img class="ima_perfiles" src="images/brayan.jpg" alt="">
+                    <h2 class="heading-yellow">BRAYAN BERNAL</h2>
+                    <p> <i> Programador general</i> </p> <hr>
+                    <p><b> "Lleva años trabajando en el equipo, con grandes capacidades para en analisis y la resolucion de problemas. Una excelente logica de programacion bajo el contexto de servidor." </b> </p>
+
+                   
                 </div>
             </div>
 
             <div class="tarrif-container">
-                <div class="inner-box">
-                    <img src="images/image1.png" alt="">
-                    <h2 class="heading-yellow">TAXISTA #2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
-                
-                    <a href="#" class="btn-yellow">VER TAXISTA</a>
+                <div class="inner-box"><br><br>
+                    <img class="ima_perfiles" src="images/jorge.jpg" alt="">
+                    <h2>JORGE GUTIERREZ</h2>
+                    <p><i> Programador general</i></p> <hr>
+                    <p> <b>"Estudiante de ingenieria en sistemas, excelente manejo de redaccion de informes y realizacion de diagramas. Notable trabajo en el software referente a su ejecucion" </b> </p>
+
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>
+    <div class="main-tariff">
+
+        <div class="inner-tarrif">
+            
+           
+
+            <div class="tarrif-container">
+                <div class="inner-box"><br><br>
+                    <img class="ima_perfiles" src="images/alejandro.jpg" alt="">
+                    <h2 class="heading-yellow"> ALEJANDRO MORALES</h2>
+                    <p>Programador general</p> <hr>
+                    <p><b>"Estudiante de ingenieria en informatica, relevantes capacidades del manejo del Frontend. Excelente manejo de la logica de programación bajo el contexto del navegador."</b> </p>
+
+                 
                 </div>
             </div>
 
             <div class="tarrif-container">
-                <div class="inner-box">
-                    <img src="images/image1.png" alt="">
-                    <h2>TAXISTA #3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illum officia fugiat, autem facere iste repellendus omnis nemo dolore</p>
-                    
-                    <a href="#">VER TAXISTA</a>
+                <div class="inner-box"><br><br>
+                    <img class="ima_perfiles" src="images/romulo.jpg" alt="">
+                    <h2>ROMULO LOZANO</h2>
+                    <p>Programador general</p> <hr>
+                    <p><b> "Estudiante de ingenieria en informatica, excelente compromiso con el software, indispensable en el desarollo de ayuda para el consumidor." </b> </p>
+               
                 </div>
             </div>
         </div>
     </div>
 
 
-
-
-    <!--TARIFAS ESTANDAR-->
-    <div class="fast-booking">
-        <h1 class="fast-hading">TARIFAS ESTANDAR</h1>
-        <h2></h2>
-        <div class="inner-fast">
-            <div class="booking-content">
-                <div class="icon-fast">
-                    <span><i class="fas fa-star"></i></span>
-                </div>
-                <div class="inner-fast-text">
-                    <h1>AEREOPUERTO</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis asperiores adipisci, totam volu</p>
-                
-                </div>
-                    
-            </div>
-            <div class="booking-content">
-                <div class="icon-fast">
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                </div>
-                <div class="inner-fast-text">
-                    <h1>TERMINAL</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis asperiores adipisci, totam volu</p>
-                
-                </div>
-            </div>
-            <div class="booking-content">
-                <div class="icon-fast">
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                </div>
-                <div class="inner-fast-text">
-                    <h1>URBE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis asperiores adipisci, totam volu</p>
-                
-                </div>
-            </div>
-            <div class="booking-content">
-                <div class="icon-fast">
-                    <span><i class="fas fa-map-marker-alt"></i></span>
-                </div>
-                <div class="inner-fast-text">
-                    <h1>CARACAS</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae debitis asperiores adipisci, totam volu</p>
-                
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- CLIENTES FRECUENTES -->
-
-
-
-    <div class="testimonials">
-        <h1 class="heading-test">CLIENTES FRECUENTES</h1>
-        <div class="main-testimonials">
-            <div class="inner-test">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis fugit magnam esse, amet adipisci eaque dolore explicabo quidem laudantium ad, enim, obcaecati optio? Harum porro delectus accusamus assumenda ullam.</p>
-                <div class="clients">
-                    <img src="images/jhon.png" alt="">
-                    <h1>jhone doe</h1>
-                </div>
-            </div>
-            <div class="inner-test">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veritatis fugit magnam esse, amet adipisci eaque dolore explicabo quidem laudantium ad, enim, obcaecati optio? Harum porro delectus accusamus assumenda ullam.</p>
-                <div class="clients">
-                    <img src="images/jhon.png" alt="">
-                    <h1>jhone doe</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    <button onclick="goUp()">DALE PA ARRIBA</button>
     <script src="script.js"></script>
     <div id="footer">Copyright 2022. Todos los derechos reservados <br>
         Maracaibo, EDO Zulia, Venezuela <br></div>
