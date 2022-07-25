@@ -5,7 +5,7 @@ console.log(ACCESS);
 if (!ACCESS && !window.location.pathname.includes('login')) {
     console.log("Está pasando por la autenticación");
     localStorage.setItem('access',false);
-    window.location.replace("livecar/login");
+    window.location.replace(window.location.hostname+"/livecar/login");
 }
 
 let menubar = document.querySelector('#menu-bars');
