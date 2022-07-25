@@ -12,8 +12,8 @@ const sendData = async (event) => {
   //   mode:"cors"
   // });
   // const data = await res.json();
-  console.log(data);
-  return data;
+  // console.log(data);
+  // return data;
 }
 
 if ($form_login) {
