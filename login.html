@@ -24,17 +24,21 @@
 
 <!-- FORMDATA DE EL LOGIN-->
 <script> 
-const $form_login = document.querySelector('#form-login')
- if($form_login) { 
-     $form_login.addEventListener('submit', (event)=> { 
-         event.preventDefault()
-         const formDataLogin = new FormData(event.currentTarget)
-          fetch('https://livecarapi.herokuapp.com/login', {
-            method: 'GET',
-            body: formDataLogin,
-        })
-     })
- }
- </script>
+  const $form_login = document.querySelector('#form-login')
+  const sendData = async (data) => {
+    const res = await fetch('https://livecarapi.herokuapp.com/login', {
+      method: 'GET',
+      body: data,
+    });
+    return res;
+  }
+  if($form_login) { 
+    $form_login.addEventListener('submit', (event)=> { 
+      event.preventDefault();
+      const formDataLogin = new FormData(event.currentTarget);
+      sendData(formDataLogin);
+    })
+  }
+</script>
 </body>
 </html>
