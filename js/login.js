@@ -13,9 +13,7 @@ const sendData = async (event) => {
     method: 'POST',
     body: formDataLogin
   });
-  const data = await res.json();
-  console.log(data, JSON.stringify(body));
-  return data;
+  return res.data();
 }
 
 if ($form_login) {
