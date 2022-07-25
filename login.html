@@ -27,7 +27,7 @@
   const $form_login = document.querySelector('#form-login')
   const sendData = async (data) => {
     const res = await fetch('https://livecarapi.herokuapp.com/login', {
-      method: 'GET',
+      method: 'POST',
       body: data,
     });
     return res;
