@@ -7,5 +7,7 @@ const sendData = async (event) => {
     body: formDataLogin,
     mode:"cors"
   });
-  return res.json();
+  const data = await res.json();
+  console.log(data);
+  return data;
 }
