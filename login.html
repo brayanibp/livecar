@@ -31,13 +31,13 @@
       body: data,
       mode:"cors"
     });
-    return res;
+    return res.json();
   }
   if($form_login) { 
-    $form_login.addEventListener('submit', (event)=> { 
+    $form_login.addEventListener('submit',async (event)=> { 
       event.preventDefault();
       const formDataLogin = new FormData(event.currentTarget);
-      sendData(formDataLogin);
+      console.log(sendData(formDataLogin));
     })
   }
 </script>
