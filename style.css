@@ -834,3 +834,63 @@ font-family:Arial,'Times New Roman', Times, serif;}
 
 
 }
+
+.calcular { 
+  width: 200px;
+  height: 40px;
+  background-color: #f8e322;
+  margin:5px ;
+  color: #000;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  border-radius: 10px;
+}
+.calcular:hover { 
+  width: 210px;
+  height: 40px;
+  background-color: #ffe600;
+  margin:5px ;
+  color: #000;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.kmreco { 
+  width: 350px;
+  height: 40px;
+  margin: 10px;
+}
+
+.result { 
+  width: 350px;
+  height: 40px;
+  margin: 10px;
+}
+
+.contact-form { 
+ background-color: #9edff0;
+ border-style: solid;
+ border-color: #000;
+}
+
+
+.tarrif-container { 
+  border-style: solid;
+}
+
+
+.ima_perfiles { 
+  border-radius: 100%;
+  width: 20px;
+  height: 300px;
+  border-style:ridge
+}
+
+.ayu { 
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+}
+
+.ayu2 { 
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+}
+

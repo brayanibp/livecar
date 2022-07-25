@@ -14,7 +14,12 @@ window.addEventListener('scroll', (ev) => {
     console.log(ev.path[1].scrollY);
 })
 
-
+function calcula(operacion){
+    var operando1 = document.calc.operando1.value
+    var operando2 = 0.9
+    var result = eval(operando1 + operacion + operando2)
+    document.calc.resultado.value = result
+}
 
 
 // TAXISTAS
