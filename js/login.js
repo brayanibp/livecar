@@ -14,3 +14,9 @@ const sendData = async (event) => {
   console.log(data);
   return data;
 }
+
+if ($form_login) {
+  $form_login.addEventListener('submit',(ev)=>{
+    sendData(ev);
+  })
+}
