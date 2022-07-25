@@ -1,4 +1,4 @@
-async function sendData (event) {
+const sendData = async (event) => {
   event.preventDefault();
   console.log("ENTRAMOS");
   const $form_login = document.querySelector('#form-login')
