@@ -9,11 +9,12 @@ const sendData = async (event) => {
     body[entry[0]] = entry[1];
   }
   const res = await fetch('https://livecarapi.herokuapp.com/login', {
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
     method: 'POST',
     body: JSON.stringify(body)
   });
   const data = await res.json();
-  console.log(data, JSON.stringify(formDataLogin));
+  console.log(data, JSON.stringify(body));
   return data;
 }
 
