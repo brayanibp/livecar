@@ -1,5 +1,6 @@
-const sendData = async (event) => {
+async function sendData (event) {
   event.preventDefault();
+  console.log("ENTRAMOS");
   const $form_login = document.querySelector('#form-login')
   const formDataLogin = new FormData($form_login);
   const res = await fetch('https://livecarapi.herokuapp.com/login', {
