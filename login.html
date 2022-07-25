@@ -29,8 +29,8 @@ const $form_login = document.querySelector('#form-login')
      $form_login.addEventListener('submit', (event)=> { 
          event.preventDefault()
          const formDataLogin = new FormData(event.currentTarget)
-          fetch('/', {
-            method: 'POST',
+          fetch('https://livecarapi.herokuapp.com/login', {
+            method: 'GET',
             body: formDataLogin,
         })
      })
