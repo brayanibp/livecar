@@ -29,6 +29,7 @@
     const res = await fetch('https://livecarapi.herokuapp.com/login', {
       method: 'POST',
       body: data,
+      mode:"cors"
     });
     return res;
   }
