@@ -1,6 +1,6 @@
 const ACCESS = (localStorage.getItem('access') === true);
 
-console.log(ACCESS);
+console.log(ACCESS,window.location.hostname);
 
 if (!ACCESS && !window.location.pathname.includes('login')) {
     console.log("Está pasando por la autenticación");
