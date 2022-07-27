@@ -4,14 +4,12 @@ const sendData = async (event) => {
   event.preventDefault();
   const $form_login = document.querySelector('#form-login') || null;
   const formDataLogin = new FormData($form_login);
-  let body = {};
-  for (let entry of formDataLogin.entries()) {
-    body[entry[0]] = entry[1];
-  }
+  const login = formDataToJSON(formDataLogin);
   const res = await axios.post('https://livecarapi.herokuapp.com/login', {
-    login: formDataLogin
+    login: login
   });
-  return res.data();
+  console.log(res);
+  return res;
 }
 
 if ($form_login) {
