@@ -64,49 +64,6 @@ if ($form_mod_tax) {
     })
 }
 
-
-// CLIENTES
-//ADD CLIENTE
-const $form_add_clie = document.querySelector('#form-add-clien')
-if ($form_add_clie) {
-    $form_add_clie.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataAddCliente = new formData(event.currentTarget)
-        fetch('/', {
-            method: 'POST',
-            body: formDataAddCliente,
-        })
-    })
-}
-
-// COSULTAR / ELIMNAR CLIENTE 
-const $form_con_el_clientes = document.querySelector('#form-con-mod-clientes')
-if ($form_con_el_clientes) {
-    $form_con_el_clientes.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataConElCliente = new formData(event.currentTarget)
-        fetch('/', {
-            method: 'POST',
-            body: formDataConElCliente,
-        })
-    })
-}
-
-// MODIFICAR CLIENTE
-const $form_mod_clien = document.querySelector('#form-mod-clien')
-if ($form_mod_clien) {
-    $form_mod_clien.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataModCliente = new formData(event.currentTarget)
-        fetch('/', {
-            method: 'POST',
-            body: formDataModCliente,
-        })
-    })
-}
-
-
-
 // CARROS 
 // CONSULTAR / ELIMINAR CARRO 
 
