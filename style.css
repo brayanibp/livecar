@@ -40,7 +40,7 @@ html{
     height: 50px;
 }
 .header .navbar a{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-left: 0rem;
     padding: .5rem 3rem;
     color: white;
@@ -892,8 +892,8 @@ font-family:Arial,'Times New Roman', Times, serif;}
   height: 35px;
   border-radius: 35px;
   background-color: rgb(255, 30, 30);
-  font-size: 1.7rem;
-  margin-left: 1rem;
+  font-size: 1.3rem;
+  margin-left: 0rem;
   color: white;
   text-decoration: none;  
 }
@@ -905,8 +905,7 @@ font-family:Arial,'Times New Roman', Times, serif;}
   border-color: rgb(251, 255, 0);
   border-radius: 20px;
   background-color: rgb(255, 30, 30);
-  font-size: 1.7rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
   color: white;
   text-decoration: none;  
   }
