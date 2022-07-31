@@ -52,46 +52,43 @@
             <form id="form-con-el-car">
                 <section class="form_clientes">
         
-                    <h4 class="titulo_form"> CONSULTAR / ELIMINAR CARRO</h4>
+                    <h4 class="titulo_form"> CONSULTAR / ELIMINAR CLIENTES</h4>
                     <div class="mar_mod"> <img class="img_mar_mod" src="images/auto.png" alt="">
-                        <input class="controls_usuario" type="text" name="id_carro" id="id-carro"
-                            placeholder="Ingrese el ID del carro">
+                        <input class="controls_usuario" type="text" name="id_cliente" id="id_cliente"
+                            placeholder="Ingrese el ID del cliente">
     
-                        <input class="controls_apellido" type="text" name="marca_carro" id="marca_carro"
-                            placeholder="Ingrese la marca del carro">
+                        <input class="controls_apellido" type="text" name="cedula_cliente" id="cedula_cliente"
+                            placeholder="Ingrese la c&eacute;dula del cliente">
                     </div>
                     <p></p>
-                    <div class="clase" align="left"><button id="consultar_carro" input="submit" value="AGREGAR" class="botons">
-                          <h2 class="prb"> CONSULTAR </h2>
-                        </button> <button id="" input="submit" value="AGREGAR" class="botons">
-                            <h2 class="prb"> ELIMINAR </h2>
-                          </button></div>
-    
+                    <div class="clase" align="left">
+                        <button id="consultar_carro" input="submit" value="AGREGAR" class="botons">
+                            <h2 class="prb">CONSULTAR</h2>
+                        </button>
+                        <button id="" input="submit" value="AGREGAR" class="botons">
+                            <h2 class="prb">ELIMINAR</h2>
+                        </button>
+                    </div>
                 </section>
-                <br><br>      <br><br>      <br><br>       
+                <br><br>      
+                <br><br>      
+                <br><br>       
             </form>
-      
         </div>
     </div>
-  
 
 <!-- Modificar cliente-->
 <br>
     <h2 class="tit_cons"> MODIFICAR </h2>
     <form id="form-mod-car">
         <section class="form_clientes">
-    
-            <h4 class="titulo_form"> MODIFICAR CARRO</h4> 
-
-            
-            <div class="cedula"> <img class="img_cedula" src="images/cedula.png" alt=""><input class="controls"
-                type="text" name="text" id="cedula"
-                placeholder="Ingrese el ID del CARRO que deseas modificar"></div>
-
-    
-            <div class="ano"> <img class="img_ano" src="images/ano.png" alt=""> <input
-                class="controls" type="text" name="ano" id="ano"
-                placeholder="Ingrese año del vehiculo">
+            <h4 class="titulo_form"> MODIFICAR CLIENTE</h4>
+            <div class="cedula"> <img class="img_cedula" src="images/cedula.png" alt="">
+                <input class="controls" type="text" name="text" id="cedula" placeholder="Ingrese la c&eacute;dula del cliente que deseas modificar">
+            </div>
+            <div class="ano">
+                <img class="img_ano" src="images/ano.png" alt="">
+                <input class="controls" type="text" name="year" id="year" placeholder="Ingrese año del vehiculo">
         </div>
         <div class="capacidad"> <img class="img_capacidad" src="images/capacidad.png" alt=""> <input
                 class="controls" type="text" name="text" id="capacidad"
