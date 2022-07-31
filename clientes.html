@@ -39,16 +39,17 @@
     <br><br>
     <br><br>
     <h2 class="tit_cons">AGREGAR</h2>
-    <form id="form-mod-car">
+    <form id="form-add-client">
         <section class="form_clientes">
             <h4 class="titulo_form">AGREGAR CLIENTE</h4>
-            <div class="cedula"> <img class="img_cedula" src="images/cedula.png" alt="">
-                <input class="controls" type="number" name="text" id="client_ci" placeholder="Ingrese la c&eacute;dula del cliente">
+            <div class="cedula">
+                <img class="img_cedula" src="images/cedula.png" alt="">
+                <input class="controls" type="number" name="cedula" id="client_ci" placeholder="Ingrese la c&eacute;dula del cliente">
             </div>
             <div class="mar_mod">
                 <img class="img_capacidad" src="images/avatar.png" alt=""> 
-                <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese nombre del Cliente">
-                <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese apellido del Cliente">
+                <input class="controls_usuario" type="text" name="nombre" id="marca" placeholder="Ingrese nombre del Cliente">
+                <input class="controls_apellido" type="text" name="apellido" id="modelo" placeholder="Ingrese apellido del Cliente">
             </div>
             <label for="client_birthday" class="form_label">Fecha de nacimiento</label>
             <div class="ano">
@@ -57,7 +58,7 @@
             </div>
             <div class="capacidad">
                 <img class="img_capacidad" src="images/telefono.png" alt=""> 
-                <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
+                <input class="controls" type="text" name="telefono" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
             </div>
             <div class="clase">
                 <button input="submit" value="AGREGAR" class="botons">
@@ -68,12 +69,13 @@
         <br><br>
         <br><br>
         <br><br>
+        <span id="client-error-text"></span>
     </form>
     <div class="home-container">
         <div class="home-content">
             <!-- FORMULARIO PARA CONSULTAR CLIENTES-->
             <h2 class="tit_cons"> CONSULTAR / ELIMINAR </h2>
-            <form id="form-con-el-car">
+            <form id="form-get-client">
                 <section class="form_clientes">
                     <h4 class="titulo_form"> CONSULTAR / ELIMINAR CLIENTES</h4>
                     <div class="mar_mod">
@@ -82,10 +84,10 @@
                         <input class="controls_apellido" type="text" name="cedula_cliente" id="cedula_cliente" placeholder="Ingrese la c&eacute;dula del cliente">
                     </div>
                     <div class="clase" align="left">
-                        <button id="consultar_carro" input="submit" value="AGREGAR" class="botons">
+                        <button id="get_client" class="botons">
                             <h2 class="prb">CONSULTAR</h2>
                         </button>
-                        <button id="" input="submit" value="AGREGAR" class="botons">
+                        <button id="delete_client" class="botons">
                             <h2 class="prb">ELIMINAR</h2>
                         </button>
                     </div>
@@ -130,7 +132,7 @@
         <br><br>
         <br>
     </form>
-    <script src="js/script.js"></script>
+    <script src="js/clientes.js"></script>
     <footer id="footer">
         Copyright 2022. Todos los derechos reservados <br>
         Maracaibo, EDO Zulia, Venezuela <br>
