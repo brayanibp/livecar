@@ -12,6 +12,7 @@ const sendData = async (event) => {
     });
     $error_text.innerHTML = "";
     setAuthToken(res.data);
+    window.location.reload();
     return null;
   } catch (err) {
     const { response } = err;

@@ -8,6 +8,7 @@ menubar.onclick = () => {
 
 function logout() {
     removeAuthToken();
+    window.location.reload();
 }
 
 function calcula(operacion){
