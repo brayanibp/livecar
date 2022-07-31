@@ -1,9 +1,13 @@
-const ACCESS = (localStorage.getItem('access') === true);
+const crypted = CryptoJS.AES.encrypt("aaaaaaa","secret").toString();
+const SESSION = getAuthToken();
 
-console.log(ACCESS,window.location.hostname);
+console.log(SESSION,window.location.hostname, crypted);
 
-if (!ACCESS && !window.location.href.includes('login')) {
-    console.log("Está pasando por la autenticación");
-    localStorage.setItem('access',false);
+if (!SESSION && !window.location.href.includes('login')) {
+    localStorage.setItem('SESSION',null);
     window.location.assign("https://"+window.location.hostname+"/livecar/login");
+}
+
+if (SESSION && window.location.href.includes('login')) {
+    window.location.assign("https://"+window.location.hostname+"/livecar");
 }

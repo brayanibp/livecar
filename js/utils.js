@@ -5,3 +5,11 @@ function formDataToJSON(formData) {
   }
   return data;
 }
+
+function setAuthToken(authToken) {
+  localStorage.setItem('SESSION',authToken);
+}
+
+function getAuthToken() {
+  return localStorage.getItem('SESSION');
+}
