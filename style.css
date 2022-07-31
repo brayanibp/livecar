@@ -4,10 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     transition: .2s linear;
-
     text-decoration: none;
-
 }
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -363,12 +362,6 @@ background: white;
         width: 100%;
         text-align: center;
     }
-}
-
-
-
-body {
-  background-image: url('fondo.jpg');
 }
 
 .form-register {
