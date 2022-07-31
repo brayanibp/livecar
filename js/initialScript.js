@@ -1,7 +1,6 @@
 const SESSION = getAuthToken();
 
 if (!SESSION && !window.location.href.includes('login')) {
-    localStorage.setItem('SESSION',null);
     window.location.assign("https://"+window.location.hostname+"/livecar/login");
 }
 
