@@ -52,15 +52,11 @@
                 <input class="controls_apellido" type="text" name="apellido" id="modelo" placeholder="Ingrese apellido del Cliente">
             </div>
             <label for="client_birthday" class="form_label">Fecha de nacimiento</label>
-            <div class="ano">
-                <img class="img_ano" src="images/ano.png" alt="">
-                <input class="controls" type="date" name="birthday" id="client_birthday" placeholder="Ingrese la fecha de nacimiento">
-            </div>
             <div class="capacidad">
                 <img class="img_capacidad" src="images/telefono.png" alt=""> 
                 <input class="controls" type="text" name="telefono" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
             </div>
-            <span id="client-error-text"></span>
+            <span class="error-text" id="client-error-text"></span>
             <div class="clase">
                 <button input="submit" value="AGREGAR" class="botons">
                     <h2 class="prb">AGREGAR</h2>
@@ -83,6 +79,7 @@
                         <input class="controls_usuario" type="text" name="id_cliente" id="id_cliente" placeholder="Ingrese el ID del cliente">    
                         <input class="controls_apellido" type="text" name="cedula_cliente" id="cedula_cliente" placeholder="Ingrese la c&eacute;dula del cliente">
                     </div>
+                    <span class="error-text" id="client-get-error-text"></span>
                     <div class="clase" align="left">
                         <button id="get_client" class="botons">
                             <h2 class="prb">CONSULTAR</h2>
@@ -121,6 +118,7 @@
                 <img class="img_capacidad" src="images/telefono.png" alt=""> 
                 <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
             </div>
+            <span class="error-text" id="client-mod-error-text"></span>
             <div class="clase">
                 <button class="botons">
                     <h2 class="prb">MODIFICAR</h2>

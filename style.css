@@ -164,7 +164,7 @@ background: white;
     text-align: center;
     padding-bottom: 6rem;
 }
-#client-error-text {
+.error-text {
   color: red;
   font-size: 1.5rem;
   display: flex;
