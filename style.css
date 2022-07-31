@@ -164,6 +164,12 @@ background: white;
     text-align: center;
     padding-bottom: 6rem;
 }
+#client-error-text {
+  color: red;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
 .main-tariff h1 span{
     color: #ffc61a;
 }
