@@ -15,5 +15,5 @@ function getAuthToken() {
 }
 
 function removeAuthToken() {
-  localStorage.setItem('SESSION', null);
+  localStorage.removeItem('SESSION');
 }

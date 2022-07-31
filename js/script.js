@@ -6,13 +6,9 @@ menubar.onclick = () => {
     mynav.classList.toggle('active');
 }
 
-let goUp = () => {
-    window.scrollTo(0, 0);
+function logout() {
+    removeAuthToken();
 }
-
-window.addEventListener('scroll', (ev) => {
-    console.log(ev.path[1].scrollY);
-})
 
 function calcula(operacion){
     var operando1 = document.calc.operando1.value
