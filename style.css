@@ -40,14 +40,14 @@ html{
     height: 50px;
 }
 .header .navbar a{
-    font-size: 1.7rem;
-    margin-left: 1rem;
+    font-size: 1.5rem;
+    margin-left: 0rem;
+    padding: .5rem 3rem;
     color: white;
     text-decoration: none;
 }
 .header .navbar a:hover{
     background: #ffc61a;
-    padding: .5rem 3rem;
     border-radius: 15px;
 }
 #menu-bars{
@@ -888,14 +888,14 @@ font-family:Arial,'Times New Roman', Times, serif;}
 }
 
 .salir { 
-width: 70px;
-height: 50px;
-border-radius: 35px;
-background-color: rgb(255, 30, 30);
-font-size: 1.7rem;
-margin-left: 1rem;
-color: white;
-text-decoration: none;  
+  padding: .5rem 3rem;
+  height: 35px;
+  border-radius: 35px;
+  background-color: rgb(255, 30, 30);
+  font-size: 1.3rem;
+  margin-left: 0rem;
+  color: white;
+  text-decoration: none;  
 }
 
 
@@ -903,12 +903,9 @@ text-decoration: none;
 .salir:hover { 
   border-style: solid;
   border-color: rgb(251, 255, 0);
-  width: 72px;
-  height: 52px;
   border-radius: 20px;
   background-color: rgb(255, 30, 30);
-  font-size: 1.7rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
   color: white;
   text-decoration: none;  
   }
