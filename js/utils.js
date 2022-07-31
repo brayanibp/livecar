@@ -13,3 +13,7 @@ function setAuthToken(authToken) {
 function getAuthToken() {
   return localStorage.getItem('SESSION');
 }
+
+function removeAuthToken() {
+  localStorage.setItem('SESSION', null);
+}
