@@ -15,8 +15,6 @@
 </head>
 
 <body>
-
-
     <div class="carts-container">
         <header class="header">
             <a href="index.html" id="logo"><img src="images/livecar.png" alt=""></a>
@@ -31,23 +29,13 @@
                 <a href="mantenimiento.html">Mantenimiento</a>
                 <a href="ayuda.html">Ayuda</a>
                 <button class="salir" onclick="logout()">SALIR</button>
-
-
             </nav>
             <a href="#" id="menu-bars" class="fas fa-bars"></a>
         </header>
     </div>
-
-
     <div class="home-container">
         <div class="home-content">
-            
-          
-       
-           
-
-
-            <!-- FORMULARIO PARA CONSULTAR CARROS-->
+            <!-- FORMULARIO PARA CONSULTAR CLIENTES-->
             <h2 class="tit_cons"> CONSULTAR / ELIMINAR </h2>
             <form id="form-con-el-car">
                 <section class="form_clientes">
@@ -76,9 +64,8 @@
             </form>
         </div>
     </div>
-
-<!-- Modificar cliente-->
-<br>
+    <!-- Modificar cliente-->
+    <br>
     <h2 class="tit_cons"> MODIFICAR </h2>
     <form id="form-mod-car">
         <section class="form_clientes">
@@ -89,69 +76,35 @@
             <div class="ano">
                 <img class="img_ano" src="images/ano.png" alt="">
                 <input class="controls" type="text" name="year" id="year" placeholder="Ingrese año del vehiculo">
-        </div>
-        <div class="capacidad"> <img class="img_capacidad" src="images/capacidad.png" alt=""> <input
-                class="controls" type="text" name="text" id="capacidad"
-                placeholder="Ingrese capacidad del vehiculo">
-        </div>
-
-        <div class="mar_mod"> <img class="img_mar_mod" src="images/auto.png" alt="">
-            <input class="controls_usuario" type="text" name="marca" id="marca"
-                placeholder="Ingrese marca del vehiculo">
-            <input class="controls_apellido" type="text" name="modelo" id="modelo"
-                placeholder="Ingrese modelo del vehiculo">
-        </div>
-
-        <div class="matricula"> <img class="img_matricula" src="images/matricula.png" alt=""> <input
-                class="controls" type="text" name="matricula" id="matricula"
-                placeholder="Ingrese matricula del vehiculo">
-        </div>
-
-        <div class="clase"><button input="submit" value="AGREGAR" class="botons">
-                <h2 class="prb"> MODIFICAR </h2>
-            </button></div>
-      
-
-        
-          
-    
+            </div>
+            <div class="capacidad">
+                <img class="img_capacidad" src="images/capacidad.png" alt=""> 
+                <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese capacidad del vehiculo">
+            </div>
+            <div class="mar_mod">
+                <img class="img_mar_mod" src="images/auto.png" alt="">
+                <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese marca del vehiculo">
+                <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese modelo del vehiculo">
+            </div>
+            <div class="matricula">
+                <img class="img_matricula" src="images/matricula.png" alt="">
+                <input class="controls" type="text" name="matricula" id="matricula" placeholder="Ingrese matricula del vehiculo">
+            </div>
+            <div class="clase">
+                <button input="submit" value="AGREGAR" class="botons">
+                    <h2 class="prb"> MODIFICAR </h2>
+                </button>
+            </div>
         </section>
-
-        <br>      <br><br>      <br><br>      <br><br>    
+        <br><br>
+        <br><br>
+        <br><br>
+        <br>
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="js/script.js"></script>
-    <div id="footer">Copyright 2022. Todos los derechos reservados <br>
-        Maracaibo, EDO Zulia, Venezuela <br></div>
+    <footer id="footer">
+        Copyright 2022. Todos los derechos reservados <br>
+        Maracaibo, EDO Zulia, Venezuela <br>
+    </footer>
 </body>
-
 </html>
