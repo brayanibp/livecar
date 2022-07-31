@@ -39,35 +39,31 @@
         <section class="form_clientes">
             <h4 class="titulo_form">AGREGAR CLIENTE</h4>
             <div class="cedula"> <img class="img_cedula" src="images/cedula.png" alt="">
-                <input class="controls" type="text" name="text" id="cedula" placeholder="Ingrese la c&eacute;dula del cliente que deseas modificar">
-            </div>
-            <div class="ano">
-                <img class="img_ano" src="images/ano.png" alt="">
-                <input class="controls" type="text" name="year" id="year" placeholder="Ingrese año del vehiculo">
-            </div>
-            <div class="capacidad">
-                <img class="img_capacidad" src="images/capacidad.png" alt=""> 
-                <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese capacidad del vehiculo">
+                <input class="controls" type="number" name="text" id="client_ci" placeholder="Ingrese la c&eacute;dula del cliente">
             </div>
             <div class="mar_mod">
-                <img class="img_mar_mod" src="images/auto.png" alt="">
-                <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese marca del vehiculo">
-                <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese modelo del vehiculo">
+                <img class="img_capacidad" src="images/avatar.png" alt=""> 
+                <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese nombre del Cliente">
+                <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese apellido del Cliente">
             </div>
-            <div class="matricula">
-                <img class="img_matricula" src="images/matricula.png" alt="">
-                <input class="controls" type="text" name="matricula" id="matricula" placeholder="Ingrese matricula del vehiculo">
+            <label for="client_birthday" class="form_label">Fecha de nacimiento</label>
+            <div class="ano">
+                <img class="img_ano" src="images/ano.png" alt="">
+                <input class="controls" type="date" name="birthday" id="client_birthday" placeholder="Ingrese la fecha de nacimiento">
+            </div>
+            <div class="capacidad">
+                <img class="img_capacidad" src="images/telefono.png" alt=""> 
+                <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
             </div>
             <div class="clase">
                 <button input="submit" value="AGREGAR" class="botons">
-                    <h2 class="prb"> MODIFICAR </h2>
+                    <h2 class="prb">AGREGAR</h2>
                 </button>
             </div>
         </section>
         <br><br>
         <br><br>
         <br><br>
-        <br>
     </form>
     <div class="home-container">
         <div class="home-content">
@@ -98,33 +94,30 @@
     </div>
     <!-- Modificar cliente-->
     <br>
-    <h2 class="tit_cons"> MODIFICAR </h2>
+    <h2 class="tit_cons">MODIFICAR</h2>
     <form id="form-mod-car">
         <section class="form_clientes">
-            <h4 class="titulo_form"> MODIFICAR CLIENTE</h4>
+            <h4 class="titulo_form">MODIFICAR CLIENTE</h4>
             <div class="cedula"> <img class="img_cedula" src="images/cedula.png" alt="">
-                <input class="controls" type="text" name="text" id="cedula" placeholder="Ingrese la c&eacute;dula del cliente que deseas modificar">
-            </div>
-            <div class="ano">
-                <img class="img_ano" src="images/ano.png" alt="">
-                <input class="controls" type="text" name="year" id="year" placeholder="Ingrese año del vehiculo">
-            </div>
-            <div class="capacidad">
-                <img class="img_capacidad" src="images/capacidad.png" alt=""> 
-                <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese capacidad del vehiculo">
+                <input class="controls" type="number" name="text" id="client_ci" placeholder="Ingrese la c&eacute;dula del cliente">
             </div>
             <div class="mar_mod">
-                <img class="img_mar_mod" src="images/auto.png" alt="">
-                <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese marca del vehiculo">
-                <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese modelo del vehiculo">
+                <img class="img_capacidad" src="images/avatar.png" alt=""> 
+                <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese nombre del Cliente">
+                <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese apellido del Cliente">
             </div>
-            <div class="matricula">
-                <img class="img_matricula" src="images/matricula.png" alt="">
-                <input class="controls" type="text" name="matricula" id="matricula" placeholder="Ingrese matricula del vehiculo">
+            <label for="client_birthday" class="form_label">Fecha de nacimiento</label>
+            <div class="ano">
+                <img class="img_ano" src="images/ano.png" alt="">
+                <input class="controls" type="date" name="birthday" id="client_birthday" placeholder="Ingrese la fecha de nacimiento">
+            </div>
+            <div class="capacidad">
+                <img class="img_capacidad" src="images/telefono.png" alt=""> 
+                <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
             </div>
             <div class="clase">
-                <button input="submit" value="AGREGAR" class="botons">
-                    <h2 class="prb"> MODIFICAR </h2>
+                <button class="botons">
+                    <h2 class="prb">MODIFICAR</h2>
                 </button>
             </div>
         </section>

@@ -40,9 +40,9 @@ html{
     height: 50px;
 }
 .header .navbar a{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-left: 0rem;
-    padding: .5rem 3rem;
+    padding: .5rem 2rem;
     color: white;
     text-decoration: none;
 }
@@ -892,13 +892,11 @@ font-family:Arial,'Times New Roman', Times, serif;}
   height: 35px;
   border-radius: 35px;
   background-color: rgb(255, 30, 30);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-left: 0rem;
   color: white;
   text-decoration: none;  
 }
-
-
 
 .salir:hover { 
   border-style: solid;
@@ -908,4 +906,16 @@ font-family:Arial,'Times New Roman', Times, serif;}
   margin-left: 0rem;
   color: white;
   text-decoration: none;  
-  }
+}
+
+.form_label {
+  font-size: 2rem;
+  padding: 10px 8rem;
+  display: block;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
