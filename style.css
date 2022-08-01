@@ -905,6 +905,10 @@ font-family:Arial,'Times New Roman', Times, serif;}
   display: block;
 }
 
+.response {
+  color: green;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
