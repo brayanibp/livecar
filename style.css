@@ -906,6 +906,7 @@ font-family:Arial,'Times New Roman', Times, serif;}
 }
 
 .response {
+  font-size: 20px;
   color: green;
 }
 
