@@ -1,4 +1,7 @@
 // CLIENTES
+
+const { default: axios } = require("axios");
+
 //ADD CLIENTE
 const $create_client_form = document.querySelector('#form-add-client');
 if ($create_client_form) {
@@ -53,9 +56,8 @@ if ($form_mod_clien) {
     event.preventDefault()
     const formDataModCliente = new FormData(event.currentTarget);
     const clientData = formDataToJSON(formDataModCliente);
-    fetch(`/cliente/update/${clientData.cedula}`, {
-      method: 'PUT',
-      body: clientData,
+    axios.put(`/cliente/update/${clientData.cedula}`, {
+      client: clientData
     });
   });
 }
