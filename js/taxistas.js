@@ -31,10 +31,9 @@ const $form_mod_tax = document.querySelector('#form-mod-taxista')
 if ($form_mod_tax) {
     $form_mod_tax.addEventListener('submit', (event) => {
         event.preventDefault()
-        const formDataModTaxista = new FormData(event.currentTarget)
-        fetch('/', {
-            method: 'POST',
+        const formDataModTaxista = new FormData(event.currentTarget);
+        axios.put('/', {
             body: formDataModTaxista,
-        })
+        });
     })
 }
