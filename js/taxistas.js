@@ -1,13 +1,16 @@
 //ADD TAXISTA
 const $form_add_tax = document.querySelector('#form-add-tax')
 if ($form_add_tax) {
-  $form_add_tax.addEventListener('submit', (event) => {
+  $form_add_tax.addEventListener('submit', async (event) => {
+    const $error_text = document.querySelector('#taxista-error-text') || null;
     event.preventDefault();
     const formDataAddTaxista = new FormData(event.currentTarget);
     const taxistaData = formDataToJSON(formDataAddTaxista);
-    axios.post('https://livecarapi.herokuapp.com/taxista/create', {
+    const res = await axios.post('https://livecarapi.herokuapp.com/taxista/create', {
       taxista: taxistaData,
     });
+    console.log(res);
+    $error_text.innerHTML = res.data.message;
   });
 }
 
