@@ -6,11 +6,6 @@ menubar.onclick = () => {
     mynav.classList.toggle('active');
 }
 
-function logout() {
-    removeAuthToken();
-    window.location.reload();
-}
-
 function calcula(operacion){
     var operando1 = document.calc.operando1.value
     var operando2 = 0.9
