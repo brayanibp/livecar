@@ -18,11 +18,10 @@ const $form_con_mod_tax = document.querySelector('#form-con-mod-tax')
 if ($form_con_mod_tax) {
     $form_con_mod_tax.addEventListener('submit', (event) => {
         event.preventDefault()
-        const formDataConElTaxista = new FormData(event.currentTarget)
-
-        fetch('/', {
-            method: 'POST',
-            body: formDataConElTaxista,
+        const formDataConElTaxista = new FormData(event.currentTarget);
+        const taxistaData = formDataToJSON(formDataConElTaxista);
+        fetch('https://livecarapi.herokuapp.com/taxista/', {
+            taxista: taxistaData,
         })
     })
 }
