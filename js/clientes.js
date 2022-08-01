@@ -14,7 +14,7 @@ if ($create_client_form) {
               client: client
           });
           console.log(res);
-          alert("Cliente agregado con exito");
+          $error_text.innerHTML = res.data.message;
         } catch (err) {
           console.log(err);
           const { response } = err;
