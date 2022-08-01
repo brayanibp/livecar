@@ -1,7 +1,5 @@
 // CLIENTES
 
-const { default: axios } = require("axios");
-
 //ADD CLIENTE
 const $create_client_form = document.querySelector('#form-add-client');
 if ($create_client_form) {
