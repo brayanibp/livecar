@@ -40,7 +40,7 @@ if ($form_get_client) {
         const res = await axios.get(`https://livecarapi.herokuapp.com/cliente/${clientIDs.id_cliente || clientIDs.cedula_cliente}`);
         console.log(res);
       } catch (error) {
-        
+        $error_text.innerHTML = error.response.data.message;
       }
     });
     $delete_client.addEventListener('click',()=>{
