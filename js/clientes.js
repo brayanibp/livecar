@@ -43,7 +43,7 @@ if ($form_get_client) {
         for (const key in res.data.client) {
           clientPrint += key + ' ';
         }
-        $response_text.innerHTML = 
+        $response_text.innerHTML = clientPrint;
       } catch (error) {
         $error_text.innerHTML = error.response.data.message;
       }
