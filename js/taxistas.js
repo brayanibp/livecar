@@ -6,11 +6,15 @@ if ($form_add_tax) {
     event.preventDefault();
     const formDataAddTaxista = new FormData(event.currentTarget);
     const taxistaData = formDataToJSON(formDataAddTaxista);
-    const res = await axios.post('https://livecarapi.herokuapp.com/taxista/create', {
-      taxista: taxistaData,
-    });
-    console.log(res);
-    $error_text.innerHTML = res.data.message;
+    try {
+      const res = await axios.post('https://livecarapi.herokuapp.com/taxista/create', {
+        taxista: taxistaData,
+      });
+      console.log(res);
+      $error_text.innerHTML = res.data.message;
+    } catch (error) {
+      $error_text.innerHTML = error.response.data.message;
+    }
   });
 }
 
