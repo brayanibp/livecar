@@ -196,39 +196,4 @@ if ($form_new_pass) {
         })
     })
 }
-
-// BAJAR RESPALDO
-const $form_bajar_respaldo = document.querySelector('#form-bajar-respaldo')
-if ($form_bajar_respaldo) {
-    $form_bajar_respaldo.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataBajarRespaldo = new formData(event.currentTarget)
-        fetch('/', {
-            method: 'POST',
-            body: formDataBajarRespaldo,
-        })
-    })
-}
-
-
-// SUBIR RESPALDO
-
-const $form_subir_respaldo = document.querySelector('#form-subir-respaldo')
-if ($form_subir_respaldo) {
-    $form_subir_respaldo.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataSubirRespaldo = new formData(event.currentTarget)
-        fetch('/', {
-            method: 'POST',
-            body: formDataSubirRespaldo,
-        })
-    })
-}
-
-
-//LOGIN 
-
- // SE ENCUENTRA EN LA ETIQUETA SCRIPT DENTRO DE LOGIN.HTML
-
-
  
