@@ -22,7 +22,7 @@ if ($form_con_el_car) {
         for (const key in res.data.carro) {
           carroPrint += key + ': ' + res.data.carro[key] + ' ';
         }
-        $response_text.innerHTML = taxistaPrint;
+        $response_text.innerHTML = carroPrint;
       } catch (error) {
         $error_text.innerHTML = error.response.data.message;
       }
