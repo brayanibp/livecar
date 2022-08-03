@@ -37,7 +37,10 @@ if ($form_login) {
       const res = await axios.post('https://livecarapi.herokuapp.com/reset_password', {
         email
       });
-      console.log(res);
+      const emailResponse = await axios.post('https://livecarapi.herokuapp.com/reset_password',{
+        email
+      });
+      console.log(res, emailResponse);
       alert(`Se ha enviado un correo a: ${email} con los nuevos datos. Revisa tu bandeja principal o la sección de SPAM.`);
     } catch (error) {
       const { response } = error;
