@@ -43,43 +43,45 @@
                     <h4 class="titulo_form"> SERVICIO</h4>
                     <div class="servicio">
                         <img class="img_servicio" src="images/inicio.png" alt="">
-                        <input class="controls" type="text" name="text" id="inicio" placeholder="INICIO DEL SERVICIO">
+                        <input class="controls" type="text" name="inicio" placeholder="INICIO DEL SERVICIO">
                     </div>
                     <div class="servicio">
                         <img class="img_servicio" src="images/final.png" alt="">
-                        <input class="controls" type="text" name="text" id="final" placeholder="FINAL DEL SERVICIO">
+                        <input class="controls" type="text" name="final" id="final" placeholder="FINAL DEL SERVICIO">
                     </div>
                     <div class="servicio">
                         <img class="img_servicio" src="images/kilometros.png" alt="">
-                        <input class="controls" type="text" name="text" id="kilometros" placeholder="TOTAL KILOMETROS RECORRIDOS">
+                        <input class="controls" type="number" name="km" placeholder="TOTAL KILOMETROS RECORRIDOS">
                     </div>
                     <div class="servicio">
                         <img class="img_servicio" src="images/precio.png" alt="">
-                        <input class="controls" type="text" name="text" id="precio" placeholder="PRECIO">
+                        <input class="controls" type="number" name="precio" placeholder="PRECIO">
                     </div>
                     <div class="servicio">
                         <img class="img_servicio" src="images/cedula.png" alt="">
-                        <input class="controls" type="text" name="text" id="id_taxista" placeholder="ID DEL TAXISTA">
+                        <input class="controls" type="number" name="taxistaID" placeholder="ID DEL TAXISTA">
                     </div>
                     <div class="servicio">
                         <img class="img_servicio" src="images/cedula.png" alt="">
-                        <input class="controls" type="text" name="text" id="id_taxista" placeholder="ID DEL CLIENTE">
+                        <input class="controls" type="number" name="clienteID" placeholder="ID DEL CLIENTE">
                     </div>
                     <hr>
                     <h2 class="lab">PAGO</h2>
                     <br>
                     <div class="servicio">
                         <img class="img_servicio" src="images/forma_pago.png" alt="">
-                        <input class="controls" type="text" name="forma_pago" id="forma_pago" placeholder="Ingrese forma de pago (EFECTIVO/TRANSFERENCIA)">
+                        <input class="controls" type="text" name="forma_de_pago" placeholder="Ingrese forma de pago (EFECTIVO/TRANSFERENCIA)">
                     </div>
                     <div class="servicio">
                         <img class="img_servicio" src="images/transferencia.png" alt="">
-                        <input class="controls" type="text" name="trans" id="transf" placeholder="Ingrese banco(TRASFERENCIA)">
+                        <input class="controls" type="text" name="banco" id="transf" placeholder="Ingrese banco(TRASFERENCIA)">
                     </div>
                     <div class="servicio">
                         <img class="img_servicio" src="images/comprobante.png" alt="">
                         <input class="controls" type="text" name="referencia" id="referencia" placeholder="Ingrese numero de referencia(TRANSFERENCIA)">
                     </div>
+                    <span class="error-text" id="servicio-get-error-text"></span>
+                    <p class="response" id="servicio-get-response"></p>
                     <div class="clase">
                         <button class="botons">
                             <h2 class="prb">CARGAR SERVICIO</h2>
@@ -114,7 +116,7 @@
         <br>
     </form>
     <br><br>
-    <script src="js/script.js"></script>
+    <script src="js/servicios.js"></script>
     <footer id="footer">
         Copyright 2022. Todos los derechos reservados <br>
         Maracaibo, EDO Zulia, Venezuela <br>
