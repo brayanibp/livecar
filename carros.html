@@ -43,8 +43,8 @@
                     <h4 class="titulo_form"> CONSULTAR / ELIMINAR CARRO</h4>
                     <div class="mar_mod">
                         <img class="img_mar_mod" src="images/auto.png" alt="">
-                        <input class="controls_usuario" type="text" name="id_carro" id="id-carro" placeholder="Ingrese el ID del carro">
-                        <input class="controls_apellido" type="text" name="marca_carro" id="marca_carro" placeholder="Ingrese la marca del carro">
+                        <input class="controls_usuario" type="number" name="id_carro" id="id-carro" placeholder="Ingrese el ID del carro">
+                        <input class="controls_apellido" type="text" name="matricula" id="marca_carro" placeholder="Ingrese la matr&iacute;cula del carro">
                     </div>
                     <p></p>
                     <div class="clase" align="left">
@@ -70,22 +70,22 @@
             <h4 class="titulo_form"> MODIFICAR CARRO</h4> 
             <div class="cedula">
                 <img class="img_cedula" src="images/cedula.png" alt="">
-                <input class="controls" type="text" name="text" id="cedula" placeholder="Ingrese el ID del CARRO que deseas modificar">
+                <input class="controls" type="number" name="text" id="cedula" placeholder="Ingrese el ID del CARRO que deseas modificar">
             </div>
             <div class="ano">
                 <img class="img_ano" src="images/ano.png" alt="">
-                <input class="controls" type="text" name="ano" id="ano" placeholder="Ingrese año del vehiculo">
+                <input class="controls" type="number" name="year" id="ano" placeholder="Ingrese año del veh&iacute;culo">
             </div>
             <div class="capacidad"> <img class="img_capacidad" src="images/capacidad.png" alt="">
-                <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese capacidad del vehiculo">
+                <input class="controls" type="number" name="capacidad" id="capacidad" placeholder="Ingrese capacidad del veh&iacute;culo">
             </div>
             <div class="mar_mod"> <img class="img_mar_mod" src="images/auto.png" alt="">
-                <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese marca del vehiculo">
-                <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese modelo del vehiculo">
+                <input class="controls_usuario" onkeypress="return check(event)" type="text" name="marca" id="marca" placeholder="Ingrese marca del veh&iacute;culo">
+                <input class="controls_apellido" onkeypress="return check(event)" type="text" name="modelo" id="modelo" placeholder="Ingrese modelo del veh&iacute;culo">
             </div>
             <div class="matricula">
                 <img class="img_matricula" src="images/matricula.png" alt="">
-                <input class="controls" type="text" name="matricula" id="matricula" placeholder="Ingrese matricula del vehiculo">
+                <input class="controls" type="text" name="matricula" id="matricula" placeholder="Ingrese matr&iacute;cula del veh&iacute;culo">
             </div>
             <div class="clase">
                 <button input="submit" value="AGREGAR" class="botons">

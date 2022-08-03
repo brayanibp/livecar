@@ -66,12 +66,12 @@
                     </div>
                     <div class="capacidad">
                         <img class="img_capacidad" src="images/capacidad.png" alt="">
-                        <input class="controls" type="text" name="cap_carro" id="capacidad" placeholder="Ingrese capacidad del veh&iacute;culo">
+                        <input class="controls" type="number" name="capacidad" placeholder="Ingrese capacidad del veh&iacute;culo">
                     </div>
                     <div class="mar_mod">
                         <img class="img_mar_mod" src="images/auto.png" alt="">
-                        <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese marca del veh&iacute;culo">
-                        <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese modelo del veh&iacute;culo">
+                        <input class="controls_usuario" onkeypress="return check(event)" type="text" name="marca" id="marca" placeholder="Ingrese marca del veh&iacute;culo">
+                        <input class="controls_apellido" onkeypress="return check(event)" type="text" name="modelo" id="modelo" placeholder="Ingrese modelo del veh&iacute;culo">
                     </div>
                     <div class="matricula">
                         <img class="img_matricula" src="images/matricula.png" alt="">
@@ -96,8 +96,8 @@
             <h4 class="titulo_form">CONSULTAR / ELIMINAR TAXISTAS</h4>
             <div class="usuario">
                 <img class="img_avatar" src="images/avatar.png" alt="">
-                <input class="controls_usuario" type="text" name="id_taxista" id="nombre" placeholder="Ingrese el ID del taxista">
-                <input class="controls_apellido" type="text" name="nombre_taxista" id="apellido" placeholder="Ingrese el nombre del taxista">
+                <input class="controls_usuario" type="number" name="ID" id="nombre" placeholder="Ingrese el ID del taxista">
+                <input class="controls_apellido" type="number" name="cedula" id="apellido" placeholder="Ingrese la cedula del taxista">
             </div>
             <p></p>
             <div class="clase" align="left">

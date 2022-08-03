@@ -48,12 +48,12 @@
             </div>
             <div class="mar_mod">
                 <img class="img_capacidad" src="images/avatar.png" alt=""> 
-                <input class="controls_usuario" type="text" name="nombre" id="marca" placeholder="Ingrese nombre del Cliente">
-                <input class="controls_apellido" type="text" name="apellido" id="modelo" placeholder="Ingrese apellido del Cliente">
+                <input class="controls_usuario" onkeypress="return check(event)" type="text" name="nombre" id="marca" placeholder="Ingrese nombre del Cliente">
+                <input class="controls_apellido" onkeypress="return check(event)" type="text" name="apellido" id="modelo" placeholder="Ingrese apellido del Cliente">
             </div>
             <div class="capacidad">
                 <img class="img_capacidad" src="images/telefono.png" alt=""> 
-                <input class="controls" type="text" name="telefono" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
+                <input class="controls" type="number" name="telefono" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
             </div>
             <span class="error-text" id="client-error-text"></span>
             <div class="clase">
