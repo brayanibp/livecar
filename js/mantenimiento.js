@@ -34,7 +34,7 @@ if ($form_new_pass) {
         const $error_text = document.querySelector('#newpassword-get-error-text');
         const $response_text = document.querySelector('#newpassword-get-response');
         try {
-          const res = axios.post('https://livecarapi.herokuapp.com/new_user', {
+          const res = await axios.post('https://livecarapi.herokuapp.com/new_user', {
               user: userData,
           });
           console.log(res);
