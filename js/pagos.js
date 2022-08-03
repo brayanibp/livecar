@@ -10,9 +10,14 @@ if ($form_consultar_pago) {
         try {
           const res = axios.get(`https://livecarapi.herokuapp.com/${pagoIDs.ID || 'ref/'+pagoIDs.referencia }`);
           console.log(res);
+          let pagoPrint = '';
+          for (const key in res.data.pago) {
+            pagoPrint += key + ': ' + res.data.pago[key] + ' ';
+          }
+          $response_text.innerHTML = pagoPrint;
         } catch (error) {
           console.log(error);
-
+          $error_text.innerHTML = error?.response?.data?.message || error.message;
         }
     })
 }
