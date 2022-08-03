@@ -13,36 +13,6 @@ function calcula(operacion){
     document.calc.resultado.value = result
 }
 
-// CARROS 
-// CONSULTAR / ELIMINAR CARRO 
-
-const $form_con_el_car = document.querySelector('#form-con-el-car')
-if ($form_con_el_car) {
-    $form_con_el_car.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataConElCarro = new formData(event.currentTarget)
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataConElCarro,
-        })
-    })
-}
-
-const $form_mod_car = document.querySelector('#form-mod-car')
-if ($form_mod_car) {
-    $form_mod_car.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataModCarro = new formData(event.currentTarget)
-
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataModCarro,
-        })
-    })
-}
-
-
-
 // PAGOS / CONSULTAR PAGO
 const $form_consultar_pago = document.querySelector('#form-pago')
 if ($form_consultar_pago) {

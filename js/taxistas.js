@@ -39,7 +39,7 @@ if ($form_con_mod_tax) {
       console.log(res);
       let taxistaPrint = '';
       for (const key in res.data.taxista) {
-        taxistaPrint += key + ' ' + res.data.taxista[key] + ' ';
+        taxistaPrint += key + ': ' + res.data.taxista[key] + ' ';
       }
       $response_text.innerHTML = taxistaPrint;
     } catch (error) {
