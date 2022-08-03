@@ -17,7 +17,7 @@ if ($form_mod_password) {
       alert(res.data.message);
       window.location.reload();
     } catch (error) {
-      $error_text.innerHTML = error.data.message;
+      $error_text.innerHTML = error.response.data.message;
     }
   });
 }
