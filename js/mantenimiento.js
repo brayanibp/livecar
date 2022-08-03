@@ -27,14 +27,20 @@ if ($form_mod_password) {
 
 const $form_new_pass = document.querySelector('#form-new-password')
 if ($form_new_pass) {
-    $form_new_pass.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataNewPass = new formData(event.currentTarget)
-
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataNewPass,
-        })
+    $form_new_pass.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const formDataNewPass = new FormData(event.currentTarget);
+        const userData = formDataToJSON(formDataNewPass);
+        const $error_text = document.querySelector('#newpassword-get-error-text');
+        const $response_text = document.querySelector('#newpassword-get-response');
+        try {
+          const res = axios.post('https://livecarapi.herokuapp.com/new_user', {
+              user: userData,
+          });
+          console.log(res);
+        } catch (error) {
+          $error_text.innerHTML = error.response.data.message;
+        }
     })
 }
 
