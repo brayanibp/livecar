@@ -33,7 +33,7 @@ if ($form_con_mod_tax) {
     const $response_text = document.querySelector('#driver-get-response');
     const $error_text = document.querySelector('#driver-get-error-text');
     try {
-      const res = await axios.get(`https://livecarapi.herokuapp.com/taxista/${taxistaData.ID || 'ci/'+taxistaData.cedula}`, {
+      const res = await axios.get(`https://livecarapi.herokuapp.com/taxista/${taxistaData.ID || 'ced/'+taxistaData.cedula}`, {
         taxista: taxistaData
       });
       console.log(res);
