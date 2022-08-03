@@ -7,18 +7,17 @@ if ($form_mod_password) {
     event.preventDefault();
     const formDataModPassword = new FormData(event.currentTarget);
     const passwordsData = formDataToJSON(formDataModPassword);
-    console.log(passwordsData);
+    const $error_text = document.querySelector('#password-get-error-text');
     try {
       const res = await axios.post('https://livecarapi.herokuapp.com/change_password', {
         user: SESSION,
         passwords: passwordsData
       });
-      console.log(res);
       setAuthToken(res.data.session);
       alert(res.data.message);
       window.location.reload();
     } catch (error) {
-      console.log(error);
+      $error_text.innerHTML = error.data.message;
     }
   });
 }
