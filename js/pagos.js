@@ -8,7 +8,7 @@ if ($form_consultar_pago) {
         const $error_text = document.querySelector('#pago-get-error-text');
         const $response_text = document.querySelector('#pago-get-response');
         try {
-          const res = axios.get(`https://livecarapi.herokuapp.com/pagos/${pagoIDs.ID || 'ref/'+pagoIDs.referencia }`);
+          const res = await axios.get(`https://livecarapi.herokuapp.com/pagos/${pagoIDs.ID || 'ref/'+pagoIDs.referencia }`);
           console.log(res);
           let pagoPrint = '';
           for (const key in res.data.pago) {
