@@ -14,7 +14,9 @@ if ($form_mod_password) {
         passwords: passwordsData
       });
       console.log(res);
-      // window.location.reload();
+      setAuthToken(res.data.session);
+      alert(res.data.message);
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }
