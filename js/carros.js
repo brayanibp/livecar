@@ -13,7 +13,7 @@ if ($form_con_el_car) {
       const $response_text = document.querySelector('#carro-get-response');
       const $error_text = document.querySelector('#carro-get-error-text');
       try {
-        const res = await axios.get('https://livecarapi.herokuapp.com/', {
+        const res = await axios.get(`https://livecarapi.herokuapp.com/carro/${carroIDs.ID || 'mat/'+carroIDs.matricula}`, {
           carro: carroIDs,
         });
         console.log(res);
