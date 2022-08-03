@@ -21,7 +21,7 @@ if ($form_con_el_car) {
     $form_con_el_car.addEventListener('submit', (event) => {
         event.preventDefault()
         const formDataConElCarro = new formData(event.currentTarget)
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataConElCarro,
         })
@@ -34,7 +34,7 @@ if ($form_mod_car) {
         event.preventDefault()
         const formDataModCarro = new formData(event.currentTarget)
 
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataModCarro,
         })
@@ -50,7 +50,7 @@ if ($form_consultar_pago) {
         event.preventDefault()
         const formDataConPago = new formData(event.currentTarget)
 
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataConPago,
         })
@@ -66,7 +66,7 @@ if ($form_new_service) {
     $form_new_service.addEventListener('submit', (event) => {
         event.preventDefault()
         const formDataNewService = new formData(event.currentTarget)
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataNewService,
         })
@@ -82,7 +82,7 @@ if ($form_con_anu_servicio) {
         event.preventDefault()
         const formDataConAnuServicio = new formData(event.currentTarget)
 
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataConAnuServicio,
         })
@@ -102,7 +102,7 @@ if ($form_reporte_servicio) {
     $form_reporte_servicio.addEventListener('submit', (event) => {
         event.preventDefault()
         const formDataReporteServicio = new formData(event.currentTarget)
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataReporteServicio,
         })
@@ -116,7 +116,7 @@ if ($form_reporte_taxista) {
     $form_reporte_taxista.addEventListener('submit', (event) => {
         event.preventDefault()
         const formDataReporteTaxista = new formData(event.currentTarget)
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataReporteTaxista,
         })
@@ -129,7 +129,7 @@ if ($form_reporte_cliente) {
     $form_reporte_cliente.addEventListener('submit', (event) => {
         event.preventDefault()
         const formDataReporteCliente = new formData(event.currentTarget)
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataReporteCliente,
         })
@@ -142,7 +142,7 @@ if ($form_reporte_pago) {
         event.preventDefault()
         const formDataReportePago = new formData(event.currentTarget)
 
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataReportePago,
         })
@@ -156,7 +156,7 @@ if ($form_reporte_carros) {
         event.preventDefault()
         const formDataReporteCarro = new formData(event.currentTarget)
 
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataReporteCarro,
         })
@@ -174,7 +174,7 @@ if ($form_mod_password) {
         event.preventDefault()
         const formDataModPassword = new formData(event.currentTarget)
 
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataModPassword,
         })
@@ -190,7 +190,7 @@ if ($form_new_pass) {
         event.preventDefault()
         const formDataNewPass = new formData(event.currentTarget)
 
-        fetch('/', {
+        fetch('https://livecarapi.herokuapp.com/', {
             method: 'POST',
             body: formDataNewPass,
         })

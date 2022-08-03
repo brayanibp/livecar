@@ -17,12 +17,12 @@ if ($form_bajar_respaldo) {
 
 const $form_subir_respaldo = document.querySelector('#form-subir-respaldo')
 if ($form_subir_respaldo) {
-    $form_subir_respaldo.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataSubirRespaldo = new formData(event.currentTarget)
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataSubirRespaldo,
-        })
+  $form_subir_respaldo.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const formDataSubirRespaldo = new formData(event.currentTarget)
+    fetch('https://livecarapi.herokuapp.com/', {
+      method: 'POST',
+      body: formDataSubirRespaldo,
     })
+  })
 }
