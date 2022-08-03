@@ -27,13 +27,23 @@ if ($form_new_service) {
 
 const $form_con_anu_servicio = document.querySelector('#form-con-anu')
 if ($form_con_anu_servicio) {
-    $form_con_anu_servicio.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataConAnuServicio = new formData(event.currentTarget)
-
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataConAnuServicio,
-        })
+    $form_con_anu_servicio.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const formDataConAnuServicio = new FormData(event.currentTarget);
+        const serviceIDs = formDataToJSON(formDataConAnuServicio);
+        const $error_text = document.querySelector('#serv-get-error-text');
+        const $response_text = document.querySelector('#serv-get-response');
+        try {
+          const res = await axios.get('https://livecarapi.herokuapp.com/servicio/'+serviceIDs.ID);
+          console.log(res);
+          let servicePrint = '';
+          for (const key in res.data.service) {
+            servicePrint += key + ': ' + res.data.service[key] + ' ';
+          }
+          $response_text.innerHTML = servicePrint;
+        } catch (error) {
+          console.log(error);
+          $error_text.innerHTML = error?.response?.data?.message || error.message;
+        }
     })
 }
