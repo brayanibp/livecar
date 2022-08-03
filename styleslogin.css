@@ -76,4 +76,7 @@ input[type="submit"]:active {
     justify-content: center;
     font-size: 17px;
     color: cornflowerblue;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
 }
