@@ -13,36 +13,6 @@ function calcula(operacion){
     document.calc.resultado.value = result
 }
 
-// PAGOS / CONSULTAR PAGO
-const $form_consultar_pago = document.querySelector('#form-pago')
-if ($form_consultar_pago) {
-    $form_consultar_pago.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataConPago = new formData(event.currentTarget)
-
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataConPago,
-        })
-    })
-}
-
-//REPORTES
-
-//REPORTE DE SERVICIOS 
-const $form_reporte_servicio = document.querySelector('#form-reporte-servicio')
-if ($form_reporte_servicio) {
-    $form_reporte_servicio.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataReporteServicio = new formData(event.currentTarget)
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataReporteServicio,
-        })
-    })
-}
-
-
 //REPORTE DE TAXISTAS
 const $form_reporte_taxista = document.querySelector('#form-reporte-taxista')
 if ($form_reporte_taxista) {
@@ -95,4 +65,3 @@ if ($form_reporte_carros) {
         })
     })
 }
- 
