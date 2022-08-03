@@ -7,14 +7,14 @@ if ($form_mod_password) {
     event.preventDefault();
     const formDataModPassword = new FormData(event.currentTarget);
     const passwordsData = formDataToJSON(formDataModPassword);
-    const user = CryptoJS.AES.decrypt(SESSION,"secret");
     console.log(passwordsData);
     try {
       const res = await axios.post('https://livecarapi.herokuapp.com/change_password', {
-        user: user,
+        user: SESSION,
         passwords: passwordsData
       });
       console.log(res);
+      window.location.reload();
     } catch (error) {
       console.log(error);
     }
