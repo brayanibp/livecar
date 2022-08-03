@@ -37,7 +37,11 @@ if ($form_con_mod_tax) {
         taxista: taxistaData
       });
       console.log(res);
-      $response_text.innerHTML = res.data.message;
+      let taxistaPrint = '';
+      for (const key in res.data.taxista) {
+        taxistaPrint += res.data.taxista[key] + ' ';
+      }
+      $response_text.innerHTML = taxistaPrint;
     } catch (error) {
       $error_text.innerHTML = error.response.data.message;
     }

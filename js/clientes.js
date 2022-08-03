@@ -36,7 +36,6 @@ if ($form_get_client) {
     $get_client.addEventListener('click', async ()=>{
       const formDataClient = new FormData($form_get_client);
       const clientIDs = formDataToJSON(formDataClient);
-      console.log(clientIDs);
       try {
         const res = await axios.get(`https://livecarapi.herokuapp.com/cliente/${clientIDs.id_cliente || 'ced/'+clientIDs.cedula_cliente}`);
         let clientPrint = '';
