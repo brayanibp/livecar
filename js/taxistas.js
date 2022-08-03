@@ -27,7 +27,7 @@ if ($form_con_mod_tax) {
     event.preventDefault();
     const formDataConElTaxista = new FormData(event.currentTarget);
     const taxistaData = formDataToJSON(formDataConElTaxista);
-    axios.get(`https://livecarapi.herokuapp.com/taxista/${taxistaData.cedula}`, {
+    axios.get(`https://livecarapi.herokuapp.com/taxista/${taxistaData.ID || 'ci/'+taxistaData.cedula}`, {
       taxista: taxistaData,
     });
   });
