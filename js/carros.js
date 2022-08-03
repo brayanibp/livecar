@@ -24,7 +24,7 @@ if ($form_con_el_car) {
         }
         $response_text.innerHTML = carroPrint;
       } catch (error) {
-        $error_text.innerHTML = error.response.data.message;
+        $error_text.innerHTML = error?.response?.data?.message;
       }
     });
 }
