@@ -97,10 +97,11 @@
             <h4 class="titulo_form">CONSULTAR / ELIMINAR TAXISTAS</h4>
             <div class="usuario">
                 <img class="img_avatar" src="images/avatar.png" alt="">
-                <input class="controls_usuario" type="number" name="ID" id="nombre" placeholder="Ingrese el ID del taxista">
-                <input class="controls_apellido" type="number" name="cedula" id="apellido" placeholder="Ingrese la cedula del taxista">
+                <input class="controls_usuario" type="number" name="ID" placeholder="Ingrese el ID del taxista">
+                <input class="controls_apellido" type="number" name="cedula" placeholder="Ingrese la cedula del taxista">
             </div>
-            <p></p>
+            <span class="error-text" id="driver-get-error-text"></span>
+            <p class="response" id="driver-get-response"></p>
             <div class="clase" align="left">
                 <button class="botons" id="consultar_taxista">
                     <h2 class="prb">CONSULTAR</h2>

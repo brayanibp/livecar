@@ -23,13 +23,24 @@ if ($form_add_tax) {
 // COSULTAR / ELIMNAR TAXISTA 
 const $form_con_mod_tax = document.querySelector('#form-con-mod-tax')
 if ($form_con_mod_tax) {
-  $form_con_mod_tax.addEventListener('submit', (event) => {
+  $form_con_mod_tax.addEventListener('submit',async (event) => {
     event.preventDefault();
-    const formDataConElTaxista = new FormData(event.currentTarget);
+  });
+  const $consultar_taxista = document.querySelector('#consultar_taxista');
+  $consultar_taxista.addEventListener('click', async () => {
+    const formDataConElTaxista = new FormData($form_con_mod_tax);
     const taxistaData = formDataToJSON(formDataConElTaxista);
-    axios.get(`https://livecarapi.herokuapp.com/taxista/${taxistaData.ID || 'ci/'+taxistaData.cedula}`, {
-      taxista: taxistaData,
-    });
+    const $response_text = document.querySelector('#driver-get-response');
+    const $error_text = document.querySelector('#driver-get-error-text');
+    try {
+      const res = await axios.get(`https://livecarapi.herokuapp.com/taxista/${taxistaData.ID || 'ci/'+taxistaData.cedula}`, {
+        taxista: taxistaData
+      });
+      console.log(res);
+      $response_text.innerHTML = res.data.message;
+    } catch (error) {
+      $error_text.innerHTML = error.response.data.message;
+    }
   });
 }
 
