@@ -1,8 +1,6 @@
 // CARROS 
 // CONSULTAR / ELIMINAR CARRO
 
-const { default: axios } = require("axios")
-
 const $form_con_el_car = document.querySelector('#form-con-el-car')
 if ($form_con_el_car) {
     $form_con_el_car.addEventListener('submit', (event) => {
