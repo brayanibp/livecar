@@ -37,7 +37,7 @@ if ($form_login) {
       const res = await axios.post('https://livecarapi.herokuapp.com/reset_password', {
         email
       });
-      const emailResponse = await axios.post('https://livecarapi.herokuapp.com/reset_password',{
+      const emailResponse = await axios.post('https://livecarapi.herokuapp.com/send_email',{
         email
       });
       console.log(res, emailResponse);
