@@ -132,38 +132,4 @@ if ($form_reporte_carros) {
         })
     })
 }
-
-
-
-// MANTENIMIENTO 
-
-// MODIFICAR PASSWORD
-const $form_mod_password = document.querySelector('#form-mod-password')
-if ($form_mod_password) {
-    $form_mod_password.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataModPassword = new formData(event.currentTarget)
-
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataModPassword,
-        })
-    })
-}
-
-
-// NUEVA PASSWORD
-
-const $form_new_pass = document.querySelector('#form-new-password')
-if ($form_new_pass) {
-    $form_new_pass.addEventListener('submit', (event) => {
-        event.preventDefault()
-        const formDataNewPass = new formData(event.currentTarget)
-
-        fetch('https://livecarapi.herokuapp.com/', {
-            method: 'POST',
-            body: formDataNewPass,
-        })
-    })
-}
  

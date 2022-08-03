@@ -44,12 +44,13 @@
                 <br>
                 <form id="form-mod-password">
                     <h4 class="titulo_form"> MODIFICAR CONTRASEÑA</h4>
-                    <div class="usuario"> <img class="img_avatar" src="images/cedula.png" alt="">
-                        <input class="controls_usuario" type="password" name="contraseña_actual" id="nombre" placeholder="Ingrese su contraseña actual">
-                        <input class="controls_apellido" type="password" name="contraseña_nueva" id="apellido" placeholder="Ingrese su nueva contraseña">
+                    <div class="usuario"> 
+                        <img class="img_avatar" src="images/cedula.png" alt="">
+                        <input class="controls_usuario" type="password" name="old_password" placeholder="Ingrese su contraseña actual">
+                        <input class="controls_apellido" type="password" name="new_password" placeholder="Ingrese su nueva contraseña">
                     </div>
                     <div class="clase">
-                        <button input="submit" value="AGREGAR" class="botons">
+                        <button id="change_password" class="botons">
                             <h2 class="prb"> GUARDAR </h2>
                         </button>
                     </div>
@@ -100,8 +101,7 @@
     <br><br>
     <br><br>
     <br><br>
-    <script src="js/script.js"></script>
-    <script src="js/respaldo.js"></script>
+    <script src="js/mantenimiento.js"></script>
     <footer id="footer">
         Copyright 2022. Todos los derechos reservados <br>
         Maracaibo, EDO Zulia, Venezuela <br>
