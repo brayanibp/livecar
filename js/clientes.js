@@ -14,6 +14,7 @@ if ($create_client_form) {
               client: client
           });
           console.log(res);
+          $error_text.innerHTML = res.data.message;
         } catch (err) {
           console.log(err);
           const { response } = err;
@@ -31,15 +32,19 @@ if ($form_get_client) {
     const $get_client = document.querySelector('#get_client');
     const $delete_client = document.querySelector('#delete_client');
     const $error_text = document.querySelector('#client-get-error-text') || null;
+    const $response_text = document.querySelector('#client-get-response') || null;
     $get_client.addEventListener('click', async ()=>{
       const formDataClient = new FormData($form_get_client);
       const clientIDs = formDataToJSON(formDataClient);
-      console.log(clientIDs);
       try {
-        const res = await axios.get(`https://livecarapi.herokuapp.com/cliente/${clientIDs.id_cliente || clientIDs.cedula_cliente}`);
-        console.log(res);
+        const res = await axios.get(`https://livecarapi.herokuapp.com/cliente/${clientIDs.id_cliente || 'ced/'+clientIDs.cedula_cliente}`);
+        let clientPrint = '';
+        for (const key in res.data.client) {
+          clientPrint += key + ' ' + res.data.client[key] + ' ';
+        }
+        $response_text.innerHTML = clientPrint;
       } catch (error) {
-        
+        $error_text.innerHTML = error.response.data.message;
       }
     });
     $delete_client.addEventListener('click',()=>{

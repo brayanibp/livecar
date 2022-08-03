@@ -43,17 +43,21 @@
                 <section class="form_clientes">
                     <h4 class="titulo_form"> AGREGAR TAXISTA</h4>
                     <div class="usuario">
+                        <img class="img_cedula" src="images/cedula.png" alt="">
+                        <input class="controls" type="number" name="cedula" placeholder="Ingrese c&eacute;dula del taxista">
+                    </div>
+                    <div class="usuario">
                         <img class="img_avatar" src="images/avatar.png" alt="">
-                        <input class="controls_usuario" type="text" name="nombre_taxista" id="nombre_taxista" placeholder="Ingrese nombre del taxista">
-                        <input class="controls_apellido" type="text" name="apellido_taxista" id="apellido" placeholder="Ingrese apellido del taxista">
+                        <input class="controls_usuario" onkeypress="return check(event)" type="text" name="nombre" placeholder="Ingrese nombre del taxista">
+                        <input class="controls_apellido" onkeypress="return check(event)" type="text" name="apellido" placeholder="Ingrese apellido del taxista">
                     </div>
                     <div class="telefono">
                         <img class="img_telefono" src="images/telefono.png" alt="">
-                        <input class="controls" type="text" name="text" id="tlf_taxista" placeholder="Ingrese telefono del taxista">
+                        <input class="controls" type="text" name="telefono" placeholder="Ingrese tel&eacute;fono del taxista">
                     </div>
                     <div class="direccion">
                         <img class="img_direccion" src="images/ubicacion.png" alt="">
-                        <input class="controls" type="text" name="dir_taxista" id="ubicacion" placeholder="Ingrese direccion del taxista">
+                        <input class="controls" type="text" name="direccion" id="ubicacion" placeholder="Ingrese direcci&oacute;n del taxista">
                     </div>
                     <hr>
                     <br>
@@ -62,21 +66,22 @@
                     <br>
                     <div class="ano">
                         <img class="img_ano" src="images/ano.png" alt="">
-                        <input class="controls" type="text" name="ano_carro" id="ano" placeholder="Ingrese año del veh&iacute;culo">
+                        <input class="controls" type="number" name="year" id="ano" placeholder="Ingrese año del veh&iacute;culo">
                     </div>
                     <div class="capacidad">
                         <img class="img_capacidad" src="images/capacidad.png" alt="">
-                        <input class="controls" type="text" name="cap_carro" id="capacidad" placeholder="Ingrese capacidad del veh&iacute;culo">
+                        <input class="controls" type="number" name="capacidad" placeholder="Ingrese capacidad del veh&iacute;culo">
                     </div>
                     <div class="mar_mod">
                         <img class="img_mar_mod" src="images/auto.png" alt="">
-                        <input class="controls_usuario" type="text" name="marca_carro" id="marca" placeholder="Ingrese marca del veh&iacute;culo">
-                        <input class="controls_apellido" type="text" name="modelo_carro" id="modelo" placeholder="Ingrese modelo del veh&iacute;culo">
+                        <input class="controls_usuario" onkeypress="return check(event)" type="text" name="marca" id="marca" placeholder="Ingrese marca del veh&iacute;culo">
+                        <input class="controls_apellido" onkeypress="return check(event)" type="text" name="modelo" id="modelo" placeholder="Ingrese modelo del veh&iacute;culo">
                     </div>
                     <div class="matricula">
                         <img class="img_matricula" src="images/matricula.png" alt="">
-                        <input class="controls" type="text" name="mat_carro" id="matricula" placeholder="Ingrese matricula del veh&iacute;culo">
+                        <input class="controls" type="text" name="matricula" id="matricula" placeholder="Ingrese matricula del veh&iacute;culo">
                     </div>
+                    <span class="error-text" id="taxista-error-text"></span>
                     <div class="clase">
                         <button class="botons">
                             <h2 class="prb">AGREGAR</h2>
@@ -95,10 +100,11 @@
             <h4 class="titulo_form">CONSULTAR / ELIMINAR TAXISTAS</h4>
             <div class="usuario">
                 <img class="img_avatar" src="images/avatar.png" alt="">
-                <input class="controls_usuario" type="text" name="id_taxista" id="nombre" placeholder="Ingrese el ID del taxista">
-                <input class="controls_apellido" type="text" name="nombre_taxista" id="apellido" placeholder="Ingrese el nombre del taxista">
+                <input class="controls_usuario" type="number" name="ID" placeholder="Ingrese el ID del taxista">
+                <input class="controls_apellido" type="number" name="cedula" placeholder="Ingrese la cedula del taxista">
             </div>
-            <p></p>
+            <span class="error-text" id="driver-get-error-text"></span>
+            <p class="response" id="driver-get-response"></p>
             <div class="clase" align="left">
                 <button class="botons" id="consultar_taxista">
                     <h2 class="prb">CONSULTAR</h2>

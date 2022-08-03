@@ -48,12 +48,12 @@
             </div>
             <div class="mar_mod">
                 <img class="img_capacidad" src="images/avatar.png" alt=""> 
-                <input class="controls_usuario" type="text" name="nombre" id="marca" placeholder="Ingrese nombre del Cliente">
-                <input class="controls_apellido" type="text" name="apellido" id="modelo" placeholder="Ingrese apellido del Cliente">
+                <input class="controls_usuario" onkeypress="return check(event)" type="text" name="nombre" id="marca" placeholder="Ingrese nombre del Cliente">
+                <input class="controls_apellido" onkeypress="return check(event)" type="text" name="apellido" id="modelo" placeholder="Ingrese apellido del Cliente">
             </div>
             <div class="capacidad">
                 <img class="img_capacidad" src="images/telefono.png" alt=""> 
-                <input class="controls" type="text" name="telefono" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
+                <input class="controls" type="number" name="telefono" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
             </div>
             <span class="error-text" id="client-error-text"></span>
             <div class="clase">
@@ -75,10 +75,11 @@
                     <h4 class="titulo_form"> CONSULTAR / ELIMINAR CLIENTES</h4>
                     <div class="mar_mod">
                         <img class="img_mar_mod" src="images/auto.png" alt="">
-                        <input class="controls_usuario" type="text" name="id_cliente" id="id_cliente" placeholder="Ingrese el ID del cliente">    
-                        <input class="controls_apellido" type="text" name="cedula_cliente" id="cedula_cliente" placeholder="Ingrese la c&eacute;dula del cliente">
+                        <input class="controls_usuario" type="number" name="id_cliente" id="id_cliente" placeholder="Ingrese el ID del cliente">    
+                        <input class="controls_apellido" type="number" name="cedula_cliente" id="cedula_cliente" placeholder="Ingrese la c&eacute;dula del cliente">
                     </div>
                     <span class="error-text" id="client-get-error-text"></span>
+                    <span class="response" id="client-get-response"></span>
                     <div class="clase" align="left">
                         <button id="get_client" class="botons">
                             <h2 class="prb">CONSULTAR</h2>
@@ -101,16 +102,16 @@
         <section class="form_clientes">
             <h4 class="titulo_form">MODIFICAR CLIENTE</h4>
             <div class="cedula"> <img class="img_cedula" src="images/cedula.png" alt="">
-                <input class="controls" type="number" name="text" id="client_ci" placeholder="Ingrese la c&eacute;dula del cliente">
+                <input class="controls" type="number" name="cedula" id="client_ci" placeholder="Ingrese la c&eacute;dula del cliente">
             </div>
             <div class="mar_mod">
                 <img class="img_capacidad" src="images/avatar.png" alt=""> 
-                <input class="controls_usuario" type="text" name="marca" id="marca" placeholder="Ingrese nombre del Cliente">
-                <input class="controls_apellido" type="text" name="modelo" id="modelo" placeholder="Ingrese apellido del Cliente">
+                <input class="controls_usuario" onkeypress="return check(event)" type="text" name="nombre" id="marca" placeholder="Ingrese nombre del Cliente">
+                <input class="controls_apellido" onkeypress="return check(event)" type="text" name="apellido" id="modelo" placeholder="Ingrese apellido del Cliente">
             </div>
             <div class="capacidad">
                 <img class="img_capacidad" src="images/telefono.png" alt=""> 
-                <input class="controls" type="text" name="text" id="capacidad" placeholder="Ingrese n&uacute;mero del cliente">
+                <input class="controls" type="number" name="text" id="telefono" placeholder="Ingrese n&uacute;mero del cliente">
             </div>
             <span class="error-text" id="client-mod-error-text"></span>
             <div class="clase">
