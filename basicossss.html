@@ -2,28 +2,30 @@
 <html lang="en">
 
 <!-- CODIGO DE PRUEBA PARA EL CHECKBOX-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
 
-    <b><p>Clickea el boton para ver la contraseña </p></b>
+    <!-- CHECKBOX PARA VER LA CONTRASEÑA-->
+    <b>
+        <p>Clickea el boton para ver la contraseña </p>
+    </b>
 
-<b>Password</b>: <input type="password" 
-  value="contraseña" id="identificadorPassword"> 
+    <b>Password</b>: <input type="password" value="contraseña" id="identificadorPassword">
 
-<input type="checkbox" onclick="mostrarPassword()">
- <b>Mira la contraseña</b>
+    <input type="checkbox" onclick="mostrarPassword()">
+    <b>Mira la contraseña</b>
+<br><br><br><br><br><br>
+    <script>
 
 
-
-<script> 
-
-     function mostrarPassword() {
+        function mostrarPassword() {
             var temp = document.getElementById("identificadorPassword");
             if (temp.type === "password") {
                 temp.type = "text";
@@ -33,10 +35,25 @@
             }
         }
 
+    </script>
 
 
 
+
+    <!-- METODO PARA PONER TODAS LAS LETRAS EN MINUSCULA/MAYUSCULA-->
+<!-- String(CODIGO).toLowerCase()-->
+
+<b>Nombre</b>: <input type="text" value="" id="nombre" placeholder="AlEjAnDrO">
+<input type="checkbox" onclick="convertirApequeño()">
+
+<script> 
+function convertirApequeño() { 
+ var t = document.getElementById('nombre')
+
+ alert( String(t.value).toLocaleLowerCase())
+}
 </script>
 
 </body>
+
 </html>

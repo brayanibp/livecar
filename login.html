@@ -17,24 +17,11 @@
       <h2>LIVECAR - INICIO DE SESI&Oacute;N</h2>
       <input type="email" placeholder="&#128272; Correo" name="email" id="email">
       <input type="password" placeholder="&#128272; Contraseña" name="password" minlength="5" maxlength="12" id="password">
-      <input type="checkbox" onclick="mostrarPassword()">
- <b>Mira la contraseña</b>
       <span id="error-text"></span>
       <input  type="submit" value="Ingresar" id="login_button">
       <br>
       <button class="olvidar_contra" id="reset_password">¿Olvidaste la contraseña?</button>
     </form>
     <script src="js/login.js"></script>
-    <script>
-    function mostrarPassword() {
-            var temp = document.getElementById("password");
-            if (temp.type === "password") {
-                temp.type = "text";
-            }
-            else {
-                temp.type = "password";
-            }
-        }
-    </script>
   </body>
 </html>
