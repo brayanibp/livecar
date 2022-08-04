@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- CODIGO DE PRUEBA PARA EL CHECKBOX-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <b><p>Clickea el boton para ver la contraseña </p></b>
+
+<b>Password</b>: <input type="password" 
+  value="contraseña" id="identificadorPassword"> 
+
+<input type="checkbox" onclick="mostrarPassword()">
+ <b>Mira la contraseña</b>
+
+
+
+<script> 
+
+     function mostrarPassword() {
+            var temp = document.getElementById("identificadorPassword");
+            if (temp.type === "password") {
+                temp.type = "text";
+            }
+            else {
+                temp.type = "password";
+            }
+        }
+
+
+
+
+</script>
+
+</body>
+</html>
